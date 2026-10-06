@@ -1,0 +1,51 @@
+Skill ID,Skill Name,Domain,Level,Prerequisite,Career
+1,Python,AI/ML,Beginner,None,AI/ML Engineer
+2,NumPy,AI/ML,Beginner,Python,AI/ML Engineer
+3,Pandas,AI/ML,Beginner,Python,AI/ML Engineer
+4,Statistics,AI/ML,Beginner,None,AI/ML Engineer
+5,Mathematics for ML,AI/ML,Intermediate,"Python,Statistics",AI/ML Engineer
+6,Data Preprocessing,AI/ML,Intermediate,"Python,Pandas",AI/ML Engineer
+7,Machine Learning,AI/ML,Intermediate,"Python,Statistics",AI/ML Engineer
+8,Regression,AI/ML,Intermediate,Machine Learning,AI/ML Engineer
+9,Classification,AI/ML,Intermediate,Machine Learning,AI/ML Engineer
+10,Model Evaluation,AI/ML,Intermediate,"Machine Learning,Statistics",AI/ML Engineer
+11,Feature Engineering,AI/ML,Intermediate,"Pandas,Machine Learning",AI/ML Engineer
+12,Deep Learning,AI/ML,Advanced,Machine Learning,AI/ML Engineer
+13,Neural Networks,AI/ML,Advanced,Deep Learning,AI/ML Engineer
+14,Natural Language Processing,AI/ML,Advanced,"Deep Learning,Python",AI/ML Engineer
+15,AI Project,AI/ML,Advanced,"Deep Learning,Python",AI/ML Engineer
+16,Python for Data Science,Data Science,Beginner,None,Data Scientist
+17,SQL,Data Science,Beginner,None,Data Scientist
+18,Statistics,Data Science,Beginner,None,Data Scientist
+19,NumPy,Data Science,Beginner,Python for Data Science,Data Scientist
+20,Pandas,Data Science,Beginner,Python for Data Science,Data Scientist
+21,Data Cleaning,Data Science,Intermediate,"Pandas,SQL",Data Scientist
+22,Data Visualization,Data Science,Intermediate,Pandas,Data Scientist
+23,Matplotlib,Data Science,Intermediate,Pandas,Data Scientist
+24,Exploratory Data Analysis,Data Science,Intermediate,"Pandas,Statistics",Data Scientist
+25,Probability,Data Science,Beginner,Statistics,Data Scientist
+26,Hypothesis Testing,Data Science,Intermediate,"Statistics,Probability",Data Scientist
+27,Machine Learning for Data Science,Data Science,Intermediate,"Statistics,Pandas",Data Scientist
+28,Regression Analysis,Data Science,Intermediate,"Statistics,Machine Learning for Data Science",Data Scientist
+29,Data Science Project,Data Science,Advanced,"Data Visualization,Machine Learning for Data Science",Data Scientist
+30,HTML,Web Development,Beginner,None,Web Developer
+31,CSS,Web Development,Beginner,HTML,Web Developer
+32,JavaScript,Web Development,Beginner,"HTML,CSS",Web Developer
+33,Responsive Web Design,Web Development,Intermediate,"HTML,CSS",Web Developer
+34,DOM Manipulation,Web Development,Intermediate,JavaScript,Web Developer
+35,Git and GitHub,Web Development,Beginner,None,Web Developer
+36,React,Web Development,Intermediate,JavaScript,Web Developer
+37,Node.js,Web Development,Intermediate,JavaScript,Web Developer
+38,Express.js,Web Development,Intermediate,Node.js,Web Developer
+39,REST API,Web Development,Intermediate,"Node.js,Express.js",Web Developer
+40,SQL Database,Web Development,Intermediate,SQL,Web Developer
+41,MongoDB,Web Development,Intermediate,Node.js,Web Developer
+42,Full Stack Development,Web Development,Advanced,"React,Node.js,REST API",Web Developer
+43,Web Development Project,Web Development,Advanced,"React,Node.js,SQL Database",Web Developer
+44,Computer Networks,Cybersecurity,Beginner,None,Cybersecurity Analyst
+45,Linux,Cybersecurity,Beginner,None,Cybersecurity Analyst
+46,Python for Cybersecurity,Cybersecurity,Intermediate,"Python,Computer Networks",Cybersecurity Analyst
+47,Cybersecurity Fundamentals,Cybersecurity,Beginner,"Computer Networks,Linux",Cybersecurity Analyst
+48,Cryptography,Cybersecurity,Intermediate,Cybersecurity Fundamentals,Cybersecurity Analyst
+49,Ethical Hacking,Cybersecurity,Advanced,"Computer Networks,Linux",Cybersecurity Analyst
+50,Security Project,Cybersecurity,Advanced,"Cryptography,Ethical Hacking",Cybersecurity Analyst
