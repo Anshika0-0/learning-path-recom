@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPath - Learning Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h2>🎓 LearnPath</h2>
+        <p>Your Career, Your Future!</p>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h1>Discover Your Learning Path 🚀</h1>
+            <p>Choose your career, tell us your current skills, and discover what to learn next.</p>
+        </div>
+
+        <div class="container">
+
+            <section class="card">
+                <h2>📝 Your Details</h2>
+                <p class="subtitle">Step 1: Tell us about yourself</p>
+
+                <form method="POST">
+                    <label for="career">What is your career goal?</label>
+                    <select id="career" name="career" required>
+                        <option value="">-- Select a career --</option>
+                        {% for career in careers %}
+                        <option value="{{ career }}"
+                        {% if selected_career == career %}selected{% endif %}>
+                            {{ career }}
+                        </option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="skills">Which skills do you already know?</label>
+                    <input type="text" id="skills" name="skills"
+                        placeholder="e.g. Python, SQL, HTML"
+                        value="{{ current_skills }}" required>
+
+                    <p class="help">💡 Separate skills with commas.</p>
+
+                    <button type="submit">Find My Learning Path →</button>
+                </form>
+
+                <div class="tip">
+                    🌱 <strong>Tip:</strong> Enter only the skills you already know.
+                </div>
+            </section>
+
+            <section class="card recommendations">
+                <h2>📚 Your Recommendations</h2>
+                <p class="subtitle">Step 2: Explore skills to learn</p>
+
+                {% if submitted %}
+
+                    <div class="career">
+                        <span>🎯 Your chosen career</span>
+                        <strong>{{ selected_career }}</strong>
+                    </div>
+
+                    {% if result %}
+                        <p class="result-info">Here are the skills you may need:</p>
+
+                        {% for skill in result %}
+                        <div class="skill">
+                            <span class="number">{{ loop.index }}</span>
+                            <span>{{ skill }}</span>
+                        </div>
+                        {% endfor %}
+
+                        <p class="success">✨ Keep learning, one skill at a time!</p>
+                    {% else %}
+                        <div class="empty">
+                            <h3>🎉 Great job!</h3>
+                            <p>No missing skills were found in the dataset based on your entries.</p>
+                        </div>
+                    {% endif %}
+
+                {% else %}
+                    <div class="empty">
+                        <div class="book">📖</div>
+                        <h3>Your learning journey starts here!</h3>
+                        <p>Complete the form to see the skills recommended for your chosen career.</p>
+                    </div>
+                {% endif %}
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>LearnPath 💜 | Plan your learning. Build your future.</p>
+    </footer>
+
+</body>
+</html>

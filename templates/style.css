@@ -1,0 +1,236 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f2ff;
+    color: #302b50;
+}
+
+header {
+    background: #6246c7;
+    color: white;
+    padding: 15px 8%;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+header p {
+    margin: 6px 0 0;
+    color: #e9e3ff;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.welcome h1 {
+    color: #6246c7;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #6c6980;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px #ddd8f5;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #6246c7;
+}
+
+.subtitle {
+    color: #88839d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0 9px;
+    font-size: 14px;
+}
+
+select, input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5d0ed;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fdfcff;
+    font-size: 14px;
+}
+
+select:focus, input:focus {
+    outline: 2px solid #a18ae9;
+}
+
+.help {
+    color: #77728e;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #6246c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #49329d;
+}
+
+.tip {
+    background: #fff5d9;
+    color: #73551b;
+    padding: 14px;
+    margin-top: 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.career {
+    background: #eee9ff;
+    padding: 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.career span, .career strong {
+    display: block;
+}
+
+.career span {
+    font-size: 12px;
+    color: #77708f;
+    margin-bottom: 7px;
+}
+
+.career strong {
+    color: #6246c7;
+}
+
+.result-info {
+    font-size: 14px;
+    color: #66617c;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    margin: 10px 0;
+    background: #f0f7ff;
+    border-left: 4px solid #3987db;
+    border-radius: 7px;
+}
+
+.number {
+    background: #3987db;
+    color: white;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.success {
+    background: #e4f8eb;
+    color: #237748;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.empty {
+    background: #faf9ff;
+    border: 1px dashed #d5c9f5;
+    border-radius: 10px;
+    padding: 25px 18px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.empty h3 {
+    color: #6246c7;
+}
+
+.empty p {
+    color: #77728e;
+    font-size: 14px;
+}
+
+.book {
+    font-size: 38px;
+}
+
+footer {
+    margin-top: 35px;
+    padding: 18px;
+    background: #302b50;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
